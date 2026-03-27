@@ -159,20 +159,20 @@ def game(s1,s2):
       goto(0,0)
       if V=="X":
         if premier==0:
-          write("Le joueur "+J1+" a gagne")
+          write("The player "+J1+" win.")
           s1+=1
         else:
-          write("Le joueur "+J2+" a gagne")
+          write("The player "+J2+" win.")
           s2+=1
       elif V=="O":
         if premier==1:
-          write("Le joueur "+J1+" a gagne")
+          write("The player "+J1+" win.")
           s1+=1
         else:
-          write("Le joueur "+J2+" a gagne")
+          write("The player "+J2+" win.")
           s2+=1
       else:
-        write("Match nul bien joue")
+        write("It's a draw.")
       wait(200000)
       clear()
       write("Do you want to play again?")
@@ -195,29 +195,29 @@ def start():
   premier=randint(0,1)
   if premier==0:
     goto(0,0)
-    write(J1+" commence")
+    write(J1+" start")
     wait(200000)
   else: 
     goto(0,0)
-    write(J2+" commence")
+    write(J2+" start")
     wait(200000)
   clear()
 
-J1=input("pseudo de J1:")
+J1=input("Nickname of J1:")
 
 if J1=="":
   J1="J1"
 
 if J1!="":
-  print(J1,"choisi\n")
+  print(J1,"chosen\n")
 
-J2=input("pseudo de J2:")
+J2=input("Nickname of J2:")
 
 if J2=="":
   J2="J2"
 
 if J2!="":  
-  print(J2,"choisi\n")
+  print(J2,"chosen\n")
 
 penup()
 hideturtle()
